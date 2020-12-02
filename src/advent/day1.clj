@@ -2,7 +2,7 @@
   (:require [advent.lib :as lib]))
 
 (def sample [1721 979 366 299 675 1456])
-(def input (lib/read-multiline-file "day1"))
+(def input (sort (lib/read-multiline-file "day1")))
 
 (defn find-product [l]
   (first
