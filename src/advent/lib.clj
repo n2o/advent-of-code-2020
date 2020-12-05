@@ -9,4 +9,10 @@
        string/split-lines
        (map read-string)))
 
+(defn read-multiline-file-no-eval [file]
+  (->> file
+       io/resource
+       slurp
+       string/split-lines))
+
 (read-multiline-file "day1")
